@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCell" rowHeight="91" id="xah-30-gMv" customClass="TableViewCell" customModule="PokeTCG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xah-30-gMv" id="HhU-SC-qie">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Kf-z5-frZ">
+                        <rect key="frame" x="8" y="8" width="73" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="3kk-pT-tcD"/>
+                            <constraint firstAttribute="width" constant="73" id="dSl-Fr-YF5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgr-B0-XSD">
+                        <rect key="frame" x="105" y="36" width="262" height="42"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Kf-z5-frZ" firstAttribute="leading" secondItem="HhU-SC-qie" secondAttribute="leading" constant="8" id="BaO-25-sDq"/>
+                    <constraint firstItem="xgr-B0-XSD" firstAttribute="leading" secondItem="4Kf-z5-frZ" secondAttribute="trailing" constant="24" id="Mhv-7D-XOq"/>
+                    <constraint firstAttribute="bottom" secondItem="4Kf-z5-frZ" secondAttribute="bottom" constant="8" id="YlY-GF-peu"/>
+                    <constraint firstAttribute="trailing" secondItem="xgr-B0-XSD" secondAttribute="trailing" constant="8" id="ZBf-cM-xxw"/>
+                    <constraint firstItem="xgr-B0-XSD" firstAttribute="top" secondItem="HhU-SC-qie" secondAttribute="top" constant="36" id="bMF-pc-PAe"/>
+                    <constraint firstAttribute="bottom" secondItem="xgr-B0-XSD" secondAttribute="bottom" constant="36" id="fjq-Ws-PQh"/>
+                    <constraint firstItem="4Kf-z5-frZ" firstAttribute="top" secondItem="HhU-SC-qie" secondAttribute="top" constant="8" id="jR9-P5-te0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="favoriteImageCell" destination="4Kf-z5-frZ" id="VyP-hw-Blt"/>
+                <outlet property="favoriteNameCell" destination="xgr-B0-XSD" id="9vB-py-uMD"/>
+            </connections>
+            <point key="canvasLocation" x="229.59999999999999" y="170.91454272863569"/>
+        </tableViewCell>
+    </objects>
+</document>
